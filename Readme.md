@@ -28,13 +28,13 @@ Considering local storage is mostly used in web applications,here is a simple ex
 ```javascript
 // say.js
 module.exports = function(){
-    const store = require("./store")();
+    const store = require("local-storage-v8").GetStorage();
     return store.name;
 }
 // server.js
 const Koa = require("koa");
 const app = new Koa();
-const GetStorage = require("local-storage-v8");
+const { GetStorage } = require("local-storage-v8");
 const say = require("./say");
 const asyncHooks = require("async_hooks");
 
