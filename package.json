@@ -1,0 +1,16 @@
+{
+  "name": "local-storage-v8",
+  "version": "0.1.0",
+  "description": "",
+  "author": "shanyy",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "pub": "rm -rf ./lib && npm install && tsc && npm publish"
+  },
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^8.0.47",
+    "chai": "^4.1.2"
+  }
+}
